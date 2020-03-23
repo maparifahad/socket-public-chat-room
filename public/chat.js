@@ -5,6 +5,7 @@ const message = document.querySelector("#message");
 const socket = io.connect("https://whatsgoodchat.herokuapp.com/");
 const typing = document.querySelector(".typing");
 const view = document.querySelector(".chat-app");
+const sound = document.querySelector("#sound");
 let height = window.innerHeight; 
 view.style.height = height + "px";
 
@@ -21,6 +22,8 @@ button.addEventListener("click", (e)=>{
       </div>
         `);
         chatOutput.scrollTop = chatOutput.scrollHeight;
+        message.value = "";
+        sound.play();
     socket.emit("chat", {
         handle: handle.value,
         message: message.value
