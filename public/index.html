@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"
+      integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="chat-app">
+        <div class="brand">
+            <div>
+            <span class="logo"><i class="fab fa-whatsapp"></i></span> WhatsGood
+            </div>
+            <div class="typing">
+                
+            </div>
+        </div>
+        <div class="chat-output">
+                
+        
+        </div>
+        <div class="chat-opt">
+            <div>
+                <input type="text" id="handle" placeholder="Enter your name" autocomplete="off">
+                <input type="text" id="message" placeholder="Type a message" autocomplete="off">
+            </div>
+            <div>
+                <button><i class="fas fa-share"></i></button>
+            </div>
+           
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" integrity="sha256-bQmrZe4yPnQrLTY+1gYylfNMBuGfnT/HKsCGX+9Xuqo=" crossorigin="anonymous"></script>
+    <script src="/chat.js"></script>
+</body>
+</html>
