@@ -20,11 +20,12 @@ button.addEventListener("click", (e)=>{
           </div>
       </div>
         `);
-
+        chatOutput.scrollTop = chatOutput.scrollHeight;
     socket.emit("chat", {
         handle: handle.value,
         message: message.value
     });
+
     }else{
         if(handle.value === ""){
             alert("Please enter your name");
@@ -46,6 +47,7 @@ socket.on("chat", (data)=>{
     </div>
     </div>
     `); 
+    chatOutput.scrollTop = chatOutput.scrollHeight;
     typing.innerHTML = `<p></p>`; 
 })
 
