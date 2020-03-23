@@ -4,6 +4,8 @@ const handle = document.querySelector("#handle");
 const message = document.querySelector("#message");
 const socket = io.connect("https://whatsgoodchat.herokuapp.com/");
 const typing = document.querySelector(".typing");
+window.scrollTo(0,document.body.scrollHeight);
+
 
 button.addEventListener("click", (e)=>{
 
