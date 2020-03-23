@@ -49,7 +49,7 @@ socket.on("chat", (data)=>{
     typing.innerHTML = `<p></p>`; 
 })
 
-message.addEventListener("keypress", (e)=>{
+message.addEventListener("change", (e)=>{
     socket.emit("typing", {handle: handle.value});
 });
 
