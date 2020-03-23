@@ -4,9 +4,9 @@ const handle = document.querySelector("#handle");
 const message = document.querySelector("#message");
 const socket = io.connect("https://whatsgoodchat.herokuapp.com/");
 const typing = document.querySelector(".typing");
-
-message.scrollIntoView(false);
-
+const view = document.querySelector(".chat-app");
+let height = window.innerHeight; 
+view.style.height = height + "px";
 
 button.addEventListener("click", (e)=>{
 
